@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Reignite Your Passion | Revolutionary Intimacy Method</title>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+   <style>
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+
+       body {
+           font-family: 'Inter', sans-serif;
+           background: url('images/landingpage.jpg') center/cover fixed no-repeat;
+           color: white;
+           overflow-x: hidden;
+           min-height: 100vh;
+           position: relative;
+           line-height: 1.6;
+       }
+
+       /* Premium overlay */
+       body::before {
+           content: '';
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(139,0,0,0.3) 100%);
+           z-index: -1;
+           pointer-events: none;
+       }
+
+       .container {
+           max-width: 1200px;
+           margin: 0 auto;
+           padding: 20px;
+           position: relative;
+           z-index: 1;
+       }
+
+       /* Premium Header */
+       .header {
+           text-align: center;
+           padding: 80px 0 60px;
+           position: relative;
+       }
+
+       .warning-badge {
+           background: linear-gradient(135deg, #ff4757, #c44569);
+           color: white;
+           padding: 12px 30px;
+           border-radius: 30px;
+           font-size: 11px;
+           font-weight: 600;
+           text-transform: uppercase;
+           letter-spacing: 1px;
+           margin-bottom: 30px;
+           display: inline-block;
+           box-shadow: 0 8px 25px rgba(255, 71, 87, 0.3);
+           border: 1px solid rgba(255, 255, 255, 0.1);
+       }
+
+       .main-headline {
+           font-family: 'Playfair Display', serif;
+           font-size: 4rem;
+           font-weight: 900;
+           line-height: 1.1;
+           margin-bottom: 30px;
+           background: linear-gradient(135deg, #ffd700, #ffed4a, #f39c12);
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           background-clip: text;
+           text-shadow: none;
+           position: relative;
+       }
+
+       .main-headline::after {
+           content: '';
+           position: absolute;
+           bottom: -10px;
+           left: 50%;
+           transform: translateX(-50%);
+           width: 100px;
+           height: 3px;
+           background: linear-gradient(90deg, transparent, #ffd700, transparent);
+       }
+
+       .sub-headline {
+           font-size: 1.3rem;
+           font-weight: 300;
+           margin-bottom: 50px;
+           opacity: 0.95;
+           line-height: 1.5;
+           max-width: 700px;
+           margin-left: auto;
+           margin-right: auto;
+           color: rgba(255, 255, 255, 0.9);
+       }
+
+       /* Premium Problem Section */
+       .problem-section {
+           background: rgba(0, 0, 0, 0.8);
+           border-radius: 25px;
+           padding: 50px;
+           margin-bottom: 60px;
+           backdrop-filter: blur(20px);
+           border: 1px solid rgba(255, 215, 0, 0.2);
+           box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+           position: relative;
+           overflow: hidden;
+       }
+
+       .problem-section::before {
+           content: '';
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           height: 1px;
+           background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.5), transparent);
+       }
+
+       .problem-title {
+           font-family: 'Playfair Display', serif;
+           font-size: 2.5rem;
+           font-weight: 700;
+           margin-bottom: 40px;
+           color: #ffd700;
+           text-align: center;
+       }
+
+       .problem-list {
+           display: grid;
+           gap: 25px;
+           max-width: 800px;
+           margin: 0 auto 40px;
+       }
+
+       .problem-item {
+           display: flex;
+           align-items: center;
+           padding: 20px;
+           background: rgba(255, 255, 255, 0.05);
+           border-radius: 15px;
+           border-left: 4px solid #ff4757;
+           transition: all 0.3s ease;
+       }
+
+       .problem-item:hover {
+           background: rgba(255, 255, 255, 0.1);
+           transform: translateX(10px);
+       }
+
+       .problem-item-text {
+           font-size: 1.1rem;
+           color: rgba(255, 255, 255, 0.9);
+       }
+
+       .problem-highlight {
+           text-align: center;
+           margin-top: 40px;
+           padding: 30px;
+           background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 71, 87, 0.1));
+           border-radius: 20px;
+           border: 1px solid rgba(255, 215, 0, 0.3);
+       }
+
+       .problem-highlight-text {
+           font-size: 1.2rem;
+           font-weight: 600;
+           color: #ffd700;
+           line-height: 1.6;
+       }
+
+       /* NEW: Method Explanation Section */
+       .method-section {
+           background: rgba(0, 0, 0, 0.9);
+           border-radius: 25px;
+           padding: 60px 50px;
+           margin-bottom: 60px;
+           backdrop-filter: blur(20px);
+           border: 2px solid rgba(0, 210, 255, 0.3);
+           box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+           position: relative;
+           overflow: hidden;
+       }
+
+       .method-section::before {
+           content: '';
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           height: 1px;
+           background: linear-gradient(90deg, transparent, rgba(0, 210, 255, 0.6), transparent);
+       }
+
+       .method-title {
+           font-family: 'Playfair Display', serif;
+           font-size: 2.8rem;
+           font-weight: 700;
+           margin-bottom: 30px;
+           background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           background-clip: text;
+           text-align: center;
+           line-height: 1.2;
+       }
+
+       .method-subtitle {
+           font-size: 1.3rem;
+           color: rgba(255, 255, 255, 0.8);
+           text-align: center;
+           margin-bottom: 50px;
+           font-weight: 300;
+           line-height: 1.5;
+       }
+
+       .method-content {
+           display: grid;
+           gap: 30px;
+           max-width: 900px;
+           margin: 0 auto;
+       }
+
+       .method-discovery {
+           background: linear-gradient(135deg, rgba(0, 210, 255, 0.1), rgba(58, 123, 213, 0.05));
+           border-radius: 20px;
+           padding: 40px;
+           border: 1px solid rgba(0, 210, 255, 0.2);
+           position: relative;
+       }
+
+       .discovery-badge {
+           background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+           color: white;
+           padding: 8px 20px;
+           border-radius: 20px;
+           font-size: 10px;
+           font-weight: 600;
+           text-transform: uppercase;
+           letter-spacing: 1px;
+           margin-bottom: 20px;
+           display: inline-block;
+       }
+
+       .discovery-text {
+           font-size: 1.1rem;
+           color: rgba(255, 255, 255, 0.9);
+           line-height: 1.7;
+           margin-bottom: 25px;
+       }
+
+       .method-features {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+           gap: 25px;
+           margin-top: 40px;
+       }
+
+       .method-feature {
+           background: rgba(255, 255, 255, 0.05);
+           border-radius: 15px;
+           padding: 25px;
+           border-left: 4px solid #00d2ff;
+           transition: all 0.3s ease;
+       }
+
+       .method-feature:hover {
+           background: rgba(255, 255, 255, 0.1);
+           transform: translateY(-5px);
+       }
+
+       .feature-title {
+           font-size: 1.2rem;
+           font-weight: 600;
+           color: #00d2ff;
+           margin-bottom: 10px;
+       }
+
+       .feature-text {
+           font-size: 1rem;
+           color: rgba(255, 255, 255, 0.8);
+           line-height: 1.5;
+       }
+
+       /* NEW: Guarantee Section */
+       .guarantee-section {
+           background: linear-gradient(135deg, rgba(34, 193, 195, 0.15), rgba(253, 187, 45, 0.1));
+           border-radius: 25px;
+           padding: 50px;
+           margin-bottom: 60px;
+           backdrop-filter: blur(15px);
+           border: 2px solid rgba(34, 193, 195, 0.3);
+           box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+           position: relative;
+           text-align: center;
+       }
+
+       .guarantee-badge {
+           background: linear-gradient(135deg, #22c1c3, #fdbb2d);
+           color: #000;
+           padding: 12px 30px;
+           border-radius: 30px;
+           font-size: 11px;
+           font-weight: 700;
+           text-transform: uppercase;
+           letter-spacing: 1px;
+           margin-bottom: 30px;
+           display: inline-block;
+           box-shadow: 0 8px 25px rgba(34, 193, 195, 0.3);
+       }
+
+       .guarantee-title {
+           font-family: 'Playfair Display', serif;
+           font-size: 2.5rem;
+           font-weight: 700;
+           margin-bottom: 25px;
+           color: #22c1c3;
+           line-height: 1.3;
+       }
+
+       .guarantee-subtitle {
+           font-size: 1.3rem;
+           color: rgba(255, 255, 255, 0.9);
+           margin-bottom: 40px;
+           font-weight: 300;
+           line-height: 1.5;
+       }
+
+       .guarantee-content {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+           gap: 30px;
+           margin-top: 40px;
+       }
+
+       .guarantee-item {
+           background: rgba(255, 255, 255, 0.08);
+           border-radius: 20px;
+           padding: 30px;
+           border: 1px solid rgba(34, 193, 195, 0.2);
+           transition: all 0.3s ease;
+       }
+
+       .guarantee-item:hover {
+           background: rgba(255, 255, 255, 0.12);
+           transform: translateY(-5px);
+       }
+
+       .guarantee-icon {
+           font-size: 3rem;
+           margin-bottom: 20px;
+           color: #fdbb2d;
+       }
+
+       .guarantee-item-title {
+           font-size: 1.3rem;
+           font-weight: 600;
+           color: #22c1c3;
+           margin-bottom: 15px;
+       }
+
+       .guarantee-item-text {
+           font-size: 1rem;
+           color: rgba(255, 255, 255, 0.8);
+           line-height: 1.6;
+       }
+
+       .guarantee-highlight {
+           background: linear-gradient(135deg, rgba(34, 193, 195, 0.2), rgba(253, 187, 45, 0.1));
+           border-radius: 20px;
+           padding: 30px;
+           margin-top: 40px;
+           border: 1px solid rgba(253, 187, 45, 0.3);
+       }
+
+       .guarantee-highlight-text {
+           font-size: 1.2rem;
+           font-weight: 600;
+           color: #fdbb2d;
+           line-height: 1.6;
+       }
+
+       /* Premium CTA Section */
+       .cta-section {
+           text-align: center;
+           margin: 80px 0;
+           background: rgba(0, 0, 0, 0.6);
+           padding: 60px 40px;
+           border-radius: 25px;
+           backdrop-filter: blur(15px);
+           border: 1px solid rgba(255, 255, 255, 0.1);
+       }
+
+       .cta-question {
+           font-family: 'Playfair Display', serif;
+           font-size: 2rem;
+           font-weight: 600;
+           margin-bottom: 40px;
+           color: #ffd700;
+           line-height: 1.4;
+       }
+
+       .cta-buttons {
+           display: flex;
+           gap: 30px;
+           justify-content: center;
+           flex-wrap: wrap;
+       }
+
+       .cta-button {
+           padding: 18px 40px;
+           font-size: 1.1rem;
+           font-weight: 600;
+           border: none;
+           border-radius: 50px;
+           cursor: pointer;
+           transition: all 0.4s ease;
+           text-transform: uppercase;
+           letter-spacing: 0.5px;
+           position: relative;
+           overflow: hidden;
+           min-width: 220px;
+       }
+
+       .btn-yes {
+           background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+           color: white;
+           box-shadow: 0 15px 35px rgba(0, 210, 255, 0.3);
+       }
+
+       .btn-no {
+           background: linear-gradient(135deg, #ff4757, #c44569);
+           color: white;
+           box-shadow: 0 15px 35px rgba(255, 71, 87, 0.3);
+       }
+
+       .cta-button:hover {
+           transform: translateY(-8px);
+           box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+       }
+
+       .cta-button::before {
+           content: '';
+           position: absolute;
+           top: 0;
+           left: -100%;
+           width: 100%;
+           height: 100%;
+           background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+           transition: left 0.5s;
+       }
+
+       .cta-button:hover::before {
+           left: 100%;
+       }
+
+       /* Premium Quiz Container */
+       .quiz-container {
+           display: none;
+           background: rgba(0,0,0,0.9);
+           border-radius: 25px;
+           padding: 60px;
+           margin-top: 60px;
+           border: 1px solid rgba(255, 215, 0, 0.3);
+           backdrop-filter: blur(20px);
+           box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+           position: relative;
+       }
+
+       .quiz-title {
+           font-family: 'Playfair Display', serif;
+           font-size: 2.8rem;
+           font-weight: 700;
+           text-align: center;
+           margin-bottom: 50px;
+           color: #ffd700;
+           line-height: 1.3;
+       }
+
+       /* Premium Progress Bar */
+       .progress-container {
+           margin-bottom: 50px;
+       }
+
+       .progress-bar {
+           width: 100%;
+           height: 8px;
+           background: rgba(255, 255, 255, 0.1);
+           border-radius: 10px;
+           overflow: hidden;
+           position: relative;
+       }
+
+       .progress-fill {
+           height: 100%;
+           background: linear-gradient(90deg, #ffd700, #ff4757);
+           width: 0%;
+           transition: width 0.8s ease;
+           border-radius: 10px;
+           box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+       }
+
+       .progress-text {
+           text-align: center;
+           margin-top: 15px;
+           font-size: 0.9rem;
+           color: rgba(255, 255, 255, 0.7);
+           font-weight: 500;
+       }
+
+       /* Premium Question Design */
+       .question {
+           display: none;
+           margin-bottom: 50px;
+       }
+
+       .question.active {
+           display: block;
+           animation: slideIn 0.6s ease;
+       }
+
+       @keyframes slideIn {
+           from { opacity: 0; transform: translateY(30px); }
+           to { opacity: 1; transform: translateY(0); }
+       }
+
+       .question-header {
+           display: flex;
+           align-items: center;
+           gap: 30px;
+           margin-bottom: 40px;
+       }
+
+       .question-image {
+           width: 120px;
+           height: 120px;
+           border-radius: 20px;
+           object-fit: cover;
+           border: 2px solid rgba(255, 215, 0, 0.3);
+           box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+       }
+
+       .question-content h3 {
+           font-family: 'Playfair Display', serif;
+           font-size: 1.8rem;
+           font-weight: 600;
+           color: #ffd700;
+           line-height: 1.4;
+           margin-bottom: 10px;
+       }
+
+       .question-subtitle {
+           font-size: 1rem;
+           color: rgba(255, 255, 255, 0.7);
+           font-weight: 300;
+       }
+
+       .question-options {
+           display: grid;
+           gap: 20px;
+       }
+
+       .option {
+           padding: 20px 30px;
+           background: rgba(255, 255, 255, 0.05);
+           border: 2px solid transparent;
+           border-radius: 15px;
+           cursor: pointer;
+           transition: all 0.3s ease;
+           backdrop-filter: blur(5px);
+           position: relative;
+           overflow: hidden;
+       }
+
+       .option::before {
+           content: '';
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 4px;
+           height: 100%;
+           background: linear-gradient(180deg, #ffd700, #ff4757);
+           transform: scaleY(0);
+           transition: transform 0.3s ease;
+       }
+
+       .option:hover {
+           background: rgba(255, 255, 255, 0.1);
+           border-color: rgba(255, 215, 0, 0.5);
+           transform: translateX(10px);
+       }
+
+       .option:hover::before {
+           transform: scaleY(1);
+       }
+
+       .option.selected {
+           background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 71, 87, 0.1));
+           border-color: #ffd700;
+           box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+       }
+
+       .option.selected::before {
+           transform: scaleY(1);
+       }
+
+       .option-text {
+           font-size: 1.1rem;
+           font-weight: 500;
+           color: white;
+       }
+
+       /* Premium Navigation */
+       .quiz-navigation {
+           text-align: center;
+           margin-top: 50px;
+           display: flex;
+           justify-content: center;
+           gap: 20px;
+       }
+
+       .nav-button {
+           padding: 15px 35px;
+           background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 71, 87, 0.2));
+           border: 1px solid rgba(255, 215, 0, 0.5);
+           border-radius: 30px;
+           color: white;
+           font-weight: 600;
+           cursor: pointer;
+           transition: all 0.3s ease;
+           text-transform: uppercase;
+           letter-spacing: 0.5px;
+           backdrop-filter: blur(10px);
+       }
+
+       .nav-button:hover:not(:disabled) {
+           background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 71, 87, 0.3));
+           transform: translateY(-3px);
+           box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
+       }
+
+       .nav-button:disabled {
+           opacity: 0.4;
+           cursor: not-allowed;
+           transform: none;
+       }
+
+       .submit-button {
+           background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+           border: none;
+           box-shadow: 0 15px 35px rgba(0, 210, 255, 0.3);
+       }
+
+       /* Premium Timer */
+       .urgency-timer {
+           position: fixed;
+           top: 25px;
+           right: 25px;
+           background: linear-gradient(135deg, #ff4757, #c44569);
+           padding: 15px 25px;
+           border-radius: 15px;
+           font-weight: 600;
+           z-index: 1000;
+           box-shadow: 0 10px 30px rgba(255, 71, 87, 0.4);
+           border: 1px solid rgba(255, 255, 255, 0.2);
+           backdrop-filter: blur(10px);
+           font-size: 0.9rem;
+       }
+
+       /* Responsive Design */
+       @media (max-width: 968px) {
+           .question-header {
+               flex-direction: column;
+               text-align: center;
+           }
+           
+           .question-image {
+               width: 100px;
+               height: 100px;
+           }
+
+           .method-features {
+               grid-template-columns: 1fr;
+           }
+
+           .guarantee-content {
+               grid-template-columns: 1fr;
+           }
+       }
+
+       @media (max-width: 768px) {
+           body {
+               background-attachment: scroll;
+           }
+           
+           .main-headline {
+               font-size: 2.8rem;
+           }
+
+           .method-section {
+               padding: 40px 25px;
+           }
+
+           .guarantee-section {
+               padding: 40px 25px;
+           }
+           
+           .quiz-container {
+               padding: 40px 20px;
+           }
+           
+           .problem-section {
+               padding: 40px 25px;
+           }
+           
+           .cta-buttons {
+               flex-direction: column;
+               align-items: center;
+           }
+           
+           .cta-button {
+               width: 100%;
+               max-width: 300px;
+           }
+           
+           .quiz-navigation {
+               flex-direction: column;
+               align-items: center;
+           }
+           
+           .nav-button {
+               width: 200px;
+           }
+           
+           .urgency-timer {
+               right: 15px;
+               top: 15px;
+               padding: 12px 20px;
+               font-size: 0.8rem;
+           }
+       }
+   </style>
+</head>
+<body>
+   <div class="urgency-timer">
+       LIMITED TIME: <span id="timer">15:00</span>
+   </div>
+
+   <div class="container">
+       <div class="header">
+           <div class="warning-badge">Exclusive Method Revealed</div>
+           <h1 class="main-headline">
+               REIGNITE THE FIRE<br>
+               IN YOUR BEDROOM<br>
+               TONIGHT
+           </h1>
+           <p class="sub-headline">
+               The Revolutionary Method That Makes Your Partner<br>
+               Crave You Like Never Before... Even If You've Been<br>
+               Together For Years
+           </p>
+       </div>
+
+       <div class="problem-section">
+           <h2 class="problem-title">Are You Tired Of...</h2>
+           <div class="problem-list">
+               <div class="problem-item">
+                   <div class="problem-item-text">Feeling like the passion has completely died in your relationship?</div>
+               </div>
+               <div class="problem-item">
+                   <div class="problem-item-text">Watching your partner lose interest and become distant?</div>
+               </div>
+               <div class="problem-item">
+                   <div class="problem-item-text">Lying awake at night wondering if they still find you attractive?</div>
+               </div>
+               <div class="problem-item">
+                   <div class="problem-item-text">Trying expensive treatments that promise results but deliver nothing?</div>
+               </div>
+           </div>
+           <div class="problem-highlight">
+               <div class="problem-highlight-text">
+                   What if I told you there's a neurological "switch" that can bring back that burning desire... and it takes just 60 seconds to activate?
+               </div>
+           </div>
+       </div>
+
+       <!-- NEW: Method Explanation Section -->
+       <div class="method-section">
+           <h2 class="method-title">The Revolutionary Neural Activation Method</h2>
+           <p class="method-subtitle">
+               Discovered by leading neuroscientists and hidden from the public for years
+           </p>
+           
+           <div class="method-content">
+               <div class="method-discovery">
+                   <div class="discovery-badge">Scientific Breakthrough</div>
+                   <div class="discovery-text">
+                       This method is based on cutting-edge neuroscience research that identified specific neural pathways responsible for sexual desire and attraction. What we discovered shocked even veteran researchers: there's a "master switch" in the brain that controls intimate desire, and it can be activated using a simple 60-second technique.
+                   </div>
+                   <div class="discovery-text">
+                       The pharmaceutical industry has spent billions trying to replicate this natural process with drugs, but nature already provided the perfect solution. This is why medical professionals are threatened by this method - it makes expensive treatments obsolete.
+                   </div>
+               </div>
+
+               <div class="method-features">
+                   <div class="method-feature">
+                       <div class="feature-title">Neurological Precision</div>
+                       <div class="feature-text">Targets the specific brain regions responsible for desire, attraction, and sexual arousal using scientifically-proven techniques.</div>
+                   </div>
+                   <div class="method-feature">
+                       <div class="feature-title">Instant Activation</div>
+                       <div class="feature-text">Works in just 60 seconds by triggering the release of natural attraction hormones and neurochemicals.</div>
+                   </div>
+                   <div class="method-feature">
+                       <div class="feature-title">Universal Application</div>
+                       <div class="feature-text">Effective for all relationship stages - from reigniting long-term partnerships to creating instant attraction with new connections.</div>
+                   </div>
+                   <div class="method-feature">
+                       <div class="feature-title">Zero Side Effects</div>
+                       <div class="feature-text">Completely natural approach that enhances your body's existing systems without any harmful chemicals or dependencies.</div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <!-- NEW: Guarantee Section -->
+       <div class="guarantee-section">
+           <div class="guarantee-badge">Your Success is Our Mission</div>
+           <h2 class="guarantee-title">Your Money Isn't Our Goal - Your Results Are</h2>
+           <p class="guarantee-subtitle">
+               We're so confident this method will transform your intimate life that we're putting our reputation on the line
+           </p>
+           
+           <div class="guarantee-content">
+               <div class="guarantee-item">
+                   <div class="guarantee-icon">🎯</div>
+                   <div class="guarantee-item-title">Results-Focused Approach</div>
+                   <div class="guarantee-item-text">We don't succeed unless you succeed. Your transformation is our only measure of success, not your payment.</div>
+               </div>
+               
+               <div class="guarantee-item">
+                   <div class="guarantee-icon">🛡️</div>
+                   <div class="guarantee-item-title">Risk-Free Investment</div>
+                   <div class="guarantee-item-text">30-day money-back guarantee. If you don't see dramatic improvements in your intimate life, get every penny back - no questions asked.</div>
+               </div>
+               
+               <div class="guarantee-item">
+                   <div class="guarantee-icon">⚡</div>
+                   <div class="guarantee-item-title">Immediate Access</div>
+                   <div class="guarantee-item-text">Start tonight. Instant digital access means you can begin transforming your relationship within the next 5 minutes.</div>
+               </div>
+           </div>
+
+           <div class="guarantee-highlight">
+               <div class="guarantee-highlight-text">
+                   "We'd rather refund 100 people than let one person settle for a passionless relationship. Your happiness matters more than our profits."
+               </div>
+           </div>
+       </div>
+
+       <div class="cta-section">
+           <h2 class="cta-question">
+               Are You Ready To Discover The Secret Method That Makes<br>
+               Your Partner Desperate For Your Touch Again?
+           </h2>
+           <div class="cta-buttons">
+               <button class="cta-button btn-yes" onclick="startQuiz()">
+                   Yes, Show Me This Method
+               </button>
+               <button class="cta-button btn-no" onclick="showNoMessage()">
+                   No, I'll Stay Frustrated
+               </button>
+           </div>
+           </div>
+
+       <div class="quiz-container" id="quizContainer">
+           <h2 class="quiz-title">Answer These 6 Questions To Get Your Personalized Solution</h2>
+           
+           <div class="progress-container">
+               <div class="progress-bar">
+                   <div class="progress-fill" id="progressBar"></div>
+               </div>
+               <div class="progress-text">Question <span id="currentQ">1</span> of 6</div>
+           </div>
+
+           <div class="question active" data-question="1">
+               <div class="question-header">
+                   <img src="images/imagem1.jpg" alt="Relationship Status" class="question-image">
+                   <div class="question-content">
+                       <h3>What best describes your current relationship status?</h3>
+                       <div class="question-subtitle">Understanding your situation helps us personalize your solution</div>
+                   </div>
+               </div>
+               <div class="question-options">
+                   <div class="option" onclick="selectOption(this, 'married')">
+                       <div class="option-text">Married or Long-term relationship</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'dating')">
+                       <div class="option-text">Dating someone special</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'single')">
+                       <div class="option-text">Single and ready to attract</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'complicated')">
+                       <div class="option-text">It's complicated</div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="question" data-question="2">
+               <div class="question-header">
+                   <img src="images/imagem2.jpg" alt="Time and Desire" class="question-image">
+                   <div class="question-content">
+                       <h3>How long has it been since you felt truly desired by your partner?</h3>
+                       <div class="question-subtitle">This helps us understand the urgency of your situation</div>
+                   </div>
+               </div>
+               <div class="question-options">
+                   <div class="option" onclick="selectOption(this, 'recent')">
+                       <div class="option-text">Within the last month</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'months')">
+                       <div class="option-text">2-6 months ago</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'year')">
+                       <div class="option-text">Over a year ago</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'never')">
+                       <div class="option-text">I can't even remember</div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="question" data-question="3">
+               <div class="question-header">
+                   <img src="images/imagem3.jpg" alt="Bedroom Frustration" class="question-image">
+                   <div class="question-content">
+                       <h3>What's your biggest frustration in the bedroom right now?</h3>
+                       <div class="question-subtitle">Identifying the core issue allows for targeted solutions</div>
+                   </div>
+               </div>
+               <div class="question-options">
+                   <div class="option" onclick="selectOption(this, 'frequency')">
+                       <div class="option-text">Lack of frequency or interest</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'performance')">
+                       <div class="option-text">Performance anxiety or issues</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'attraction')">
+                       <div class="option-text">Partner seems unattracted to me</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'routine')">
+                       <div class="option-text">Everything feels routine and boring</div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="question" data-question="4">
+               <div class="question-header">
+                   <img src="images/imagem4.jpg" alt="Confidence Level" class="question-image">
+                   <div class="question-content">
+                       <h3>How would you rate your confidence in romantic situations?</h3>
+                       <div class="question-subtitle">Your confidence level determines the approach we'll recommend</div>
+                   </div>
+               </div>
+               <div class="question-options">
+                   <div class="option" onclick="selectOption(this, 'high')">
+                       <div class="option-text">Very confident</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'medium')">
+                       <div class="option-text">Somewhat confident</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'low')">
+                       <div class="option-text">Not very confident</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'none')">
+                       <div class="option-text">Zero confidence</div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="question" data-question="5">
+               <div class="question-header">
+                   <img src="images/imagem5.jpg" alt="Previous Attempts" class="question-image">
+                   <div class="question-content">
+                       <h3>Have you tried other methods to improve your love life?</h3>
+                       <div class="question-subtitle">Understanding what hasn't worked helps us avoid those approaches</div>
+                   </div>
+               </div>
+               <div class="question-options">
+                   <div class="option" onclick="selectOption(this, 'therapy')">
+                       <div class="option-text">Couples therapy or counseling</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'supplements')">
+                       <div class="option-text">Supplements or medications</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'books')">
+                       <div class="option-text">Self-help books or videos</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'nothing')">
+                       <div class="option-text">Nothing has worked so far</div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="question" data-question="6">
+               <div class="question-header">
+                   <img src="images/imagem6.jpg" alt="Motivation Level" class="question-image">
+                   <div class="question-content">
+                       <h3>How motivated are you to transform this situation?</h3>
+                       <div class="question-subtitle">Your motivation level helps us customize the intensity of your program</div>
+                   </div>
+               </div>
+               <div class="question-options">
+                   <div class="option" onclick="selectOption(this, 'very')">
+                       <div class="option-text">Extremely motivated - I'll do whatever it takes</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'moderate')">
+                       <div class="option-text">Pretty motivated to change</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'curious')">
+                       <div class="option-text">Curious about potential solutions</div>
+                   </div>
+                   <div class="option" onclick="selectOption(this, 'skeptical')">
+                       <div class="option-text">Skeptical but willing to listen</div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="quiz-navigation">
+               <button class="nav-button" id="prevBtn" onclick="previousQuestion()" disabled>Previous</button>
+               <button class="nav-button" id="nextBtn" onclick="nextQuestion()" disabled>Next Question</button>
+               <button class="nav-button submit-button" id="submitBtn" onclick="submitQuiz()" style="display: none;">Get My Personalized Solution</button>
+           </div>
+       </div>
+   </div>
+
+   <script>
+       let currentQuestion = 1;
+       let answers = {};
+       let timeLeft = 15 * 60;
+
+       function updateTimer() {
+           const minutes = Math.floor(timeLeft / 60);
+           const seconds = timeLeft % 60;
+           document.getElementById('timer').textContent = 
+               `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+           
+           if (timeLeft > 0) {
+               timeLeft--;
+               setTimeout(updateTimer, 1000);
+           } else {
+               document.getElementById('timer').textContent = "EXPIRED";
+               document.getElementById('timer').style.color = "#ff4757";
+           }
+       }
+
+       updateTimer();
+
+       function startQuiz() {
+           document.querySelector('.cta-section').style.display = 'none';
+           document.querySelector('.problem-section').style.display = 'none';
+           document.querySelector('.method-section').style.display = 'none';
+           document.querySelector('.guarantee-section').style.display = 'none';
+           document.getElementById('quizContainer').style.display = 'block';
+           updateProgressBar();
+           
+           // Smooth scroll to quiz
+           document.getElementById('quizContainer').scrollIntoView({ 
+               behavior: 'smooth',
+               block: 'start'
+           });
+       }
+
+       function showNoMessage() {
+           alert("We understand. When you're ready to transform your love life, this exclusive method will be here. But remember - this limited-time offer won't last forever.");
+       }
+
+       function selectOption(element, value) {
+           const options = element.parentNode.querySelectorAll('.option');
+           options.forEach(opt => opt.classList.remove('selected'));
+           
+           element.classList.add('selected');
+           answers[currentQuestion] = value;
+           
+           document.getElementById('nextBtn').disabled = false;
+           if (currentQuestion === 6) {
+               document.getElementById('submitBtn').style.display = 'inline-block';
+           }
+       }
+
+       function nextQuestion() {
+           if (currentQuestion < 6) {
+               document.querySelector(`[data-question="${currentQuestion}"]`).classList.remove('active');
+               currentQuestion++;
+               document.querySelector(`[data-question="${currentQuestion}"]`).classList.add('active');
+               updateProgressBar();
+               updateNavigationButtons();
+           }
+       }
+
+       function previousQuestion() {
+           if (currentQuestion > 1) {
+               document.querySelector(`[data-question="${currentQuestion}"]`).classList.remove('active');
+               currentQuestion--;
+               document.querySelector(`[data-question="${currentQuestion}"]`).classList.add('active');
+               updateProgressBar();
+               updateNavigationButtons();
+           }
+       }
+
+       function updateProgressBar() {
+           const progress = (currentQuestion / 6) * 100;
+           document.getElementById('progressBar').style.width = progress + '%';
+           document.getElementById('currentQ').textContent = currentQuestion;
+       }
+
+       function updateNavigationButtons() {
+           const prevBtn = document.getElementById('prevBtn');
+           const nextBtn = document.getElementById('nextBtn');
+           const submitBtn = document.getElementById('submitBtn');
+           
+           prevBtn.disabled = currentQuestion === 1;
+           nextBtn.disabled = !answers[currentQuestion];
+           
+           if (currentQuestion === 6) {
+               nextBtn.style.display = 'none';
+               submitBtn.style.display = 'inline-block';
+           } else {
+               nextBtn.style.display = 'inline-block';
+               submitBtn.style.display = 'none';
+           }
+       }
+
+       function submitQuiz() {
+           // Store quiz data
+           const quizData = {
+               answers: answers,
+               timestamp: new Date().toISOString(),
+               timeSpent: (15 * 60) - timeLeft
+           };
+           
+           console.log('Quiz completed:', quizData);
+           
+           // Show loading animation
+           const submitBtn = document.getElementById('submitBtn');
+           const originalText = submitBtn.textContent;
+           submitBtn.textContent = 'Analyzing Your Answers...';
+           submitBtn.disabled = true;
+           
+           // Simulate processing time
+           setTimeout(() => {
+               // Hide quiz
+               document.getElementById('quizContainer').style.display = 'none';
+               
+               // Show results page
+               showResultsPage();
+           }, 2000);
+       }
+
+       function showResultsPage() {
+           // Create results page
+           const resultsHTML = `
+               <div class="results-container">
+                   <div class="results-header">
+                       <div class="success-badge">Analysis Complete</div>
+                       <h2 class="results-title">Your Personalized Solution Is Ready</h2>
+                       <p class="results-subtitle">Based on your unique situation, we've identified the perfect approach to reignite your passion</p>
+                   </div>
+                   
+                   <div class="results-content">
+                       <div class="results-image">
+                           <img src="images/imagem6.jpg" alt="Your Solution" class="solution-image">
+                       </div>
+                       
+                       <div class="results-benefits">
+                           <h3 class="benefits-title">What You'll Discover:</h3>
+                           <div class="benefit-item">
+                               <div class="benefit-icon">✓</div>
+                               <div class="benefit-text">The 60-second neurological trigger that instantly activates desire</div>
+                           </div>
+                           <div class="benefit-item">
+                               <div class="benefit-icon">✓</div>
+                               <div class="benefit-text">Secret psychological patterns that make your partner crave intimacy</div>
+                           </div>
+                           <div class="benefit-item">
+                               <div class="benefit-icon">✓</div>
+                               <div class="benefit-text">Advanced techniques used by relationship experts worldwide</div>
+                           </div>
+                           <div class="benefit-item">
+                               <div class="benefit-icon">✓</div>
+                               <div class="benefit-text">Step-by-step implementation guide tailored to your situation</div>
+                           </div>
+                       </div>
+                       
+                       <div class="urgency-section">
+                           <div class="urgency-text">
+                               <strong>Limited Time Exclusive Access</strong><br>
+                               This revolutionary method is only available to a select few. 
+                               Your personalized solution expires in <span id="resultTimer">10:00</span>
+                           </div>
+                       </div>
+                       
+                       <div class="pricing-section">
+                           <div class="price-comparison">
+                               <div class="original-price">Regular Price: <span class="crossed-price">$297</span></div>
+                               <div class="special-price">Your Exclusive Price: <span class="current-price">$47</span></div>
+                               <div class="savings">You Save $250 Today</div>
+                           </div>
+                       </div>
+                       
+                       <div class="cta-final">
+                           <button class="final-cta-button" onclick="redirectToCheckout()">
+                               Get Instant Access Now
+                           </button>
+                           <div class="guarantee-text">
+                               30-Day Money-Back Guarantee • Instant Digital Access • Secure Payment
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           `;
+           
+           // Add results styles
+           const resultsStyles = `
+               <style>
+                   .results-container {
+                       background: rgba(0,0,0,0.9);
+                       border-radius: 25px;
+                       padding: 60px;
+                       margin-top: 40px;
+                       border: 1px solid rgba(255, 215, 0, 0.3);
+                       backdrop-filter: blur(20px);
+                       box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+                       animation: slideUp 0.8s ease;
+                   }
+                   
+                   @keyframes slideUp {
+                       from { opacity: 0; transform: translateY(50px); }
+                       to { opacity: 1; transform: translateY(0); }
+                   }
+                   
+                   .results-header {
+                       text-align: center;
+                       margin-bottom: 50px;
+                   }
+                   
+                   .success-badge {
+                       background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+                       color: white;
+                       padding: 12px 30px;
+                       border-radius: 30px;
+                       font-size: 11px;
+                       font-weight: 600;
+                       text-transform: uppercase;
+                       letter-spacing: 1px;
+                       margin-bottom: 30px;
+                       display: inline-block;
+                       box-shadow: 0 8px 25px rgba(0, 210, 255, 0.3);
+                   }
+                   
+                   .results-title {
+                       font-family: 'Playfair Display', serif;
+                       font-size: 3rem;
+                       font-weight: 700;
+                       color: #ffd700;
+                       margin-bottom: 20px;
+                       line-height: 1.2;
+                   }
+                   
+                   .results-subtitle {
+                       font-size: 1.2rem;
+                       color: rgba(255, 255, 255, 0.8);
+                       line-height: 1.5;
+                       max-width: 600px;
+                       margin: 0 auto;
+                   }
+                   
+                   .results-content {
+                       display: grid;
+                       gap: 40px;
+                   }
+                   
+                   .solution-image {
+                       width: 100%;
+                       max-width: 400px;
+                       height: 250px;
+                       object-fit: cover;
+                       border-radius: 20px;
+                       margin: 0 auto;
+                       display: block;
+                       border: 2px solid rgba(255, 215, 0, 0.3);
+                       box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+                   }
+                   
+                   .benefits-title {
+                       font-family: 'Playfair Display', serif;
+                       font-size: 2rem;
+                       color: #ffd700;
+                       margin-bottom: 30px;
+                       text-align: center;
+                   }
+                   
+                   .benefit-item {
+                       display: flex;
+                       align-items: flex-start;
+                       gap: 20px;
+                       margin-bottom: 20px;
+                       padding: 20px;
+                       background: rgba(255, 255, 255, 0.05);
+                       border-radius: 15px;
+                       border-left: 4px solid #00d2ff;
+                   }
+                   
+                   .benefit-icon {
+                       background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+                       color: white;
+                       width: 30px;
+                       height: 30px;
+                       border-radius: 50%;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       font-weight: bold;
+                       flex-shrink: 0;
+                   }
+                   
+                   .benefit-text {
+                       font-size: 1.1rem;
+                       color: white;
+                       line-height: 1.5;
+                   }
+                   
+                   .urgency-section {
+                       background: linear-gradient(135deg, rgba(255, 71, 87, 0.2), rgba(196, 69, 105, 0.2));
+                       border: 1px solid rgba(255, 71, 87, 0.5);
+                       border-radius: 20px;
+                       padding: 30px;
+                       text-align: center;
+                       margin: 30px 0;
+                   }
+                   
+                   .urgency-text {
+                       font-size: 1.1rem;
+                       color: white;
+                       line-height: 1.6;
+                   }
+                   
+                   #resultTimer {
+                       color: #ff4757;
+                       font-weight: bold;
+                       font-size: 1.2rem;
+                   }
+                   
+                   .pricing-section {
+                       text-align: center;
+                       margin: 40px 0;
+                   }
+                   
+                   .price-comparison {
+                       background: rgba(255, 215, 0, 0.1);
+                       border: 1px solid rgba(255, 215, 0, 0.3);
+                       border-radius: 20px;
+                       padding: 30px;
+                   }
+                   
+                   .original-price {
+                       font-size: 1.1rem;
+                       color: rgba(255, 255, 255, 0.7);
+                       margin-bottom: 10px;
+                   }
+                   
+                   .crossed-price {
+                       text-decoration: line-through;
+                       color: #ff4757;
+                   }
+                   
+                   .special-price {
+                       font-size: 2.5rem;
+                       font-weight: bold;
+                       color: #ffd700;
+                       margin-bottom: 10px;
+                   }
+                   
+                   .current-price {
+                       color: #00d2ff;
+                   }
+                   
+                   .savings {
+                       font-size: 1.2rem;
+                       color: #00d2ff;
+                       font-weight: 600;
+                   }
+                   
+                   .cta-final {
+                       text-align: center;
+                       margin-top: 40px;
+                   }
+                   
+                   .final-cta-button {
+                       background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+                       color: white;
+                       font-size: 1.3rem;
+                       font-weight: bold;
+                       padding: 20px 50px;
+                       border: none;
+                       border-radius: 50px;
+                       cursor: pointer;
+                       transition: all 0.4s ease;
+                       text-transform: uppercase;
+                       letter-spacing: 1px;
+                       box-shadow: 0 15px 35px rgba(0, 210, 255, 0.3);
+                       animation: pulse 2s infinite;
+                   }
+                   
+                   .final-cta-button:hover {
+                       transform: translateY(-5px);
+                       box-shadow: 0 25px 50px rgba(0, 210, 255, 0.4);
+                   }
+                   
+                   .guarantee-text {
+                       margin-top: 20px;
+                       font-size: 0.9rem;
+                       color: rgba(255, 255, 255, 0.7);
+                       line-height: 1.5;
+                   }
+                   
+                   @media (max-width: 768px) {
+                       .results-container {
+                           padding: 40px 20px;
+                       }
+                       
+                       .results-title {
+                           font-size: 2.2rem;
+                       }
+                       
+                       .special-price {
+                           font-size: 2rem;
+                       }
+                       
+                       .final-cta-button {
+                           width: 100%;
+                           max-width: 350px;
+                       }
+                   }
+               </style>
+           `;
+           
+           // Add styles to head
+           document.head.insertAdjacentHTML('beforeend', resultsStyles);
+           
+           // Add results to container
+           document.querySelector('.container').insertAdjacentHTML('beforeend', resultsHTML);
+           
+           // Start result timer
+           startResultTimer();
+           
+           // Scroll to results
+           document.querySelector('.results-container').scrollIntoView({ 
+               behavior: 'smooth',
+               block: 'start'
+           });
+       }
+
+       function startResultTimer() {
+           let resultTimeLeft = 10 * 60; // 10 minutes
+           
+           function updateResultTimer() {
+               const minutes = Math.floor(resultTimeLeft / 60);
+               const seconds = resultTimeLeft % 60;
+               const timerElement = document.getElementById('resultTimer');
+               
+               if (timerElement) {
+                   timerElement.textContent = 
+                       `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+               }
+               
+               if (resultTimeLeft > 0) {
+                   resultTimeLeft--;
+                   setTimeout(updateResultTimer, 1000);
+               } else {
+                   if (timerElement) {
+                       timerElement.textContent = "EXPIRED";
+                       timerElement.style.color = "#ff4757";
+                   }
+               }
+           }
+           
+           updateResultTimer();
+       }
+
+       function redirectToCheckout() {
+           // Redirect to Hotmart checkout
+           window.open('https://pay.hotmart.com/T100994212E?checkoutMode=10', '_blank');
+       }
+
+       // Enhanced smooth scrolling for better UX
+       document.addEventListener('DOMContentLoaded', function() {
+           // Add subtle parallax effect
+           window.addEventListener('scroll', () => {
+               const scrolled = window.pageYOffset;
+               const rate = scrolled * -0.3;
+               
+               if (document.querySelector('.header')) {
+                   document.querySelector('.header').style.transform = `translateY(${rate}px)`;
+               }
+           });
+       });
+
+       // Add loading states for better perceived performance
+       function addLoadingStates() {
+           const buttons = document.querySelectorAll('.cta-button, .nav-button');
+           buttons.forEach(button => {
+               button.addEventListener('click', function() {
+                   if (!this.disabled) {
+                       this.style.opacity = '0.8';
+                       setTimeout(() => {
+                           if (this.style) this.style.opacity = '1';
+                       }, 200);
+                   }
+               });
+           });
+       }
+
+       // Initialize loading states
+       addLoadingStates();
+   </script>
+</body>
+</html>
